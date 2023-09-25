@@ -72,7 +72,7 @@ exports.updateBook = async(req, res) => {
     try {
         
         const {id} = req.params;
-        await Books.updateOne({_id: id}, {...req.body})
+        await books.updateOne({_id: id}, {...req.body})
         const updateBook = await books.findById(id)
         return res.status(200).json(updateBook)
 
