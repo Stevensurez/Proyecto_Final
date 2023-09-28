@@ -10,7 +10,10 @@ const bookSchema = new mongoose.Schema( {
     language: String,
     year_of_edition: String, 
     image_url: String, 
-    description: String
+    description_short: String,
+    description_long: String,
+    description_author: String,
+    photo_author: String
    
 })
 
